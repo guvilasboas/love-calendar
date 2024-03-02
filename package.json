@@ -2,15 +2,17 @@
   "name": "react-love-calendar",
   "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
   "files": [
     "dist"
   ],
-  "main": "./dist/react-love-calendar.umd.js",
-  "types": "./dist/lib/index.d.ts",
+  "main": "./dist/react-love-calendar.umd.cjs",
+  "types": "./dist/react-love-calendar.d.ts",
+  "module": "./dist/react-love-calendar.js",
   "exports": {
     ".": {
-      "import": "./dist/react-love-calendar.es.js",
-      "require": "./dist/react-love-calendar.umd.js"
+      "import": "./dist/react-love-calendar.js",
+      "require": "./dist/react-love-calendar.umd.cjs"
     }
   },
   "scripts": {

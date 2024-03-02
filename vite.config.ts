@@ -12,9 +12,9 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: "src/lib/index.ts",
+      entry: "src/react-love-calendar.ts",
       name: "react-love-calendar",
-      fileName: (format) => `react-love-calendar.${format}.js`,
+      fileName: "react-love-calendar",
     },
     rollupOptions: {
       external: ["react"],
