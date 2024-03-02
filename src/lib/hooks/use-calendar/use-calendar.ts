@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useMemo } from "react";
 import { CalendarContext } from "../..";
 import { add, sub, Duration } from "date-fns";
-import { createMonthMatrix } from "../../helpers";
+import { createDateMatrix } from "../../helpers";
 import { DurationInterval, RangeGenerators } from "./ranges";
 
 function isDurationType(x: string): x is keyof Duration {
@@ -83,7 +83,7 @@ export function useCalendar() {
    *
    */
   const matrix = useMemo(() => {
-    return createMonthMatrix(startDate, endDate);
+    return createDateMatrix(startDate, endDate);
   }, [startDate, endDate]);
 
   const rangeGenerator = useCallback(() => {

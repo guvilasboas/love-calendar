@@ -1,7 +1,7 @@
 import { startOfWeek, endOfWeek, eachDayOfInterval } from "date-fns";
 
 // Função para criar a matriz do mês
-export function createMonthMatrix(startDay: Date, endDay: Date) {
+export function createDateMatrix(startDay: Date, endDay: Date) {
   const startWeek = startOfWeek(startDay);
   const endWeek = endOfWeek(endDay);
 

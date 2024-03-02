@@ -1,1 +1,1 @@
-export * from "./create-month-matrix";
+export * from "./create-date-matrix";
